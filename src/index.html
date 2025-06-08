@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Cats Info</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
-  <body>
-    <h1>Example title</h1>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+  <body>    
+      <div class="container">
+<h1>cats info</h1>
+        <select class="breed-select"></select>
+        <span class="loader"></span>
+        <!-- <p class="loader">Loading data, please wait...</p> -->
+        <p class="error"></p>
+        <div class="cat-info "></div>
+      </div>
+      <script src="index.js" type="module"></script>     
   </body>
 </html>
