@@ -1,3 +1,147 @@
+// .container {
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding: 16px 32px;
+// }
+
+// img {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+// }
+
+// .cat-header {
+//   font-size: 42px;
+//   color: #6b4f3b;
+//   text-align: center;
+//   font-family: 'Georgia', serif;
+//   background-color: #fdf6ee;
+//   padding: 25px 20px;
+//   border-radius: 20px;
+//   box-shadow: 0 8px 16px rgba(107, 79, 59, 0.2);
+//   margin: 0px auto 40px;
+//   max-width: 600px;
+//   transition: transform 0.3s ease;
+// }
+
+// .cat-header:hover {
+//   transform: scale(1.02);
+//   box-shadow: 0 12px 20px rgba(107, 79, 59, 0.3);
+// }
+
+// .hidden {
+//   display: none !important;
+// }
+
+// .cat-info {
+//   display: flex;
+//   gap: 50px;
+
+//   @media screen and (max-width: 767px) {
+//     flex-direction: column;
+//   }
+// }
+
+// .cat-info__img {
+//   width: 60% !important;
+
+//   @media screen and (max-width: 767px) {
+//     width: 100% !important;
+//   }
+// }
+
+// .cat-info__img img {
+//   max-height: 70vh !important;
+//   object-fit: contain !important;
+//   border-radius: 10px !important;
+
+//   @media screen and (max-width: 767px) {
+//     max-height: 50vh !important;
+//   }
+// }
+
+// .cat-info__descr {
+//   width: 40%;
+
+//   @media screen and (max-width: 767px) {
+//     width: 100%;
+//   }
+// }
+
+// .ss-main {
+//   width: 300px !important;
+//   margin-bottom: 16px;
+// }
+
+// .ss-list {
+//   background-color: #dcdcdc;
+//   border: 1px solid #ccc;
+// }
+
+// /*Loader*/
+// .loader {
+//   width: 48px;
+//   height: 48px;
+//   border-radius: 50%;
+//   display: inline-block;
+//   position: relative;
+//   border: 3px solid;
+//   border-color: #FFF #FFF transparent transparent;
+//   box-sizing: border-box;
+//   animation: rotation 1s linear infinite;
+// }
+
+// .loader::after,
+// .loader::before {
+//   content: '';
+//   box-sizing: border-box;
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: 0;
+//   bottom: 0;
+//   margin: auto;
+//   border: 3px solid;
+//   border-color: transparent transparent #FF3D00 #FF3D00;
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 50%;
+//   box-sizing: border-box;
+//   animation: rotationBack 0.5s linear infinite;
+//   transform-origin: center center;
+// }
+
+// .loader::before {
+//   width: 32px;
+//   height: 32px;
+//   border-color: #FFF #FFF transparent transparent;
+//   animation: rotation 1.5s linear infinite;
+// }
+
+// @keyframes rotation {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
+
+// @keyframes rotationBack {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+
+//   100% {
+//     transform: rotate(-360deg);
+//   }
+// }
+
+
+
+
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -5,28 +149,9 @@
 }
 
 img {
-  display: block;
   width: 100%;
+  display: block;
   height: auto;
-}
-
-.cat-header {
-  font-size: 42px;
-  color: #6b4f3b;
-  text-align: center;
-  font-family: 'Georgia', serif;
-  background-color: #fdf6ee;
-  padding: 25px 20px;
-  border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(107, 79, 59, 0.2);
-  margin: 0px auto 40px;
-  max-width: 600px;
-  transition: transform 0.3s ease;
-}
-
-.cat-header:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 20px rgba(107, 79, 59, 0.3);
 }
 
 .hidden {
@@ -42,21 +167,13 @@ img {
   }
 }
 
+
+
 .cat-info__img {
-  width: 60% !important;
+  width: 60%;
 
   @media screen and (max-width: 767px) {
-    width: 100% !important;
-  }
-}
-
-.cat-info__img img {
-  max-height: 70vh !important;
-  object-fit: contain !important;
-  border-radius: 10px !important;
-
-  @media screen and (max-width: 767px) {
-    max-height: 50vh !important;
+    width: 100%;
   }
 }
 
@@ -68,13 +185,18 @@ img {
   }
 }
 
+
+/* Обрезаем ширину селекта */
+
 .ss-main {
   width: 300px !important;
   margin-bottom: 16px;
 }
 
+
+/* Цвет фона выпадающего меню */
 .ss-list {
-  background-color: #dcdcdc;
+  background-color: #dcdcdc !important;
   border: 1px solid #ccc;
 }
 
