@@ -95,6 +95,7 @@ function fetchBreeds() {
 
 function fetchCatByBreed(breedId) {
     showLoaderWhileFetchingCat();
+    
     fetch(`${BASE_URL}images/search?breed_ids=${breedId}&include_breeds=true`, requestOptions)
         .then(res => {
             if (!res.ok) throw new Error('Failed to fetch cat');
